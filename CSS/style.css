@@ -13,26 +13,22 @@ html {
     font-family: 'Oswald', sans-serif;
 }
 
-.body {
-    background-color: rgba(48, 58, 61, 1);
-}
-
 .form {
     max-width: 800px;
     margin: auto;
-    background-color: hsl(0, 0%, 100%);
     padding: 15px;
-    border: solid 2px hsl(115, 7%, 32%);
     border-radius: 30px;
-    position: relative;
-    box-shadow: 0px 10px 24px 0px rgba(6, 10, 14, 0.959);
 }
 
+.form__label{
+    color: white;
+}
 .form__header {
+    margin-top: 40px;
+    padding: 40px;
     text-align: center;
     font-size: 40px;
     color: white;
-    text-shadow: 3px 3px 10px rgba(6, 10, 14, 1);
 }
 
 .form__fieldset {
@@ -45,20 +41,24 @@ html {
     font-size: 25px;
     text-align: center;
     font-weight: 600;
-    border-top: 5px solid rgba(48, 58, 61, 1);
+    border-top: 5px solid #9ae293;
     padding-top: 15px;
+    color: white;
 }
 
 .form__button {
-    background-color: rgba(48, 58, 61, 1);
+    background-color: #6cae6b;
     color: white;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-color:#9ae293;
     margin: 20px;
 }
 
 .form__bracket {
-    border-color: rgba(48, 58, 61, 1);
+    border-color: rgb(204, 204, 204);
     border: 2px solid;
     border-radius: 10px;
     padding: 7px;

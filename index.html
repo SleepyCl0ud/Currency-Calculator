@@ -9,38 +9,42 @@
     <title>Kalkulator wymiany walut</title>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/background.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body class="body">
-    <div class="form__header">
-        <h1>Kantor wymiany walut</h1>
+    <div class="background">
+        <div class="form__header">
+            <h1>Kantor wymiany walut</h1>
+        </div>
+    <div class="form">
+    <form class="js-form">
+        <fieldset class="form__fieldset">
+            <p>
+                <label class="form__label">
+                    PLN: <input class="js-amount form__bracket" type="number" min="1" name="amount">
+                </label>
+            </p>
+            <p>
+                <label class="form__label ">
+                    Waluta: <select class="js-currency form__bracket">
+                        <option value="EUR">Euro</option>
+                        <option value="USD">Dolar Amerykański</option>
+                        <option value="GBP">Funt Szterling</option>
+                    </select>
+                </label>
+            </p>
+            <button class="form__button">Oblicz</button>
+        </fieldset>
+        <p class="js-result form__result">PLN=<span></span></p>
+    </form>
     </div>
-<div class="form">
-<form class="js-form">
-    <fieldset class="form__fieldset">
-        <p>
-            <label class="form__label">
-                PLN: <input class="js-amount form__bracket" type="number" min="1" name="amount">
-            </label>
-        </p>
-        <p>
-            <label class="form__label ">
-                Waluta: <select class="js-currency form__bracket">
-                    <option value="EUR">Euro</option>
-                    <option value="USD">Dolar Amerykański</option>
-                    <option value="GBP">Funt Szterling</option>
-                </select>
-            </label>
-        </p>
-        <button class="form__button">Oblicz</button>
-    </fieldset>
-    <p class="js-result form__result">PLN=<span></span></p>
-</form>
-</div>
+    </div>
+
 </body>
 
 </html>

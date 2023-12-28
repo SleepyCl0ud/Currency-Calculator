@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+
+}
+
+.background{
+    background-image: url("../images/bg.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+overflow: auto;
+min-width: 100%;
+min-height: 100%;
+position: fixed;
+
+}
+
