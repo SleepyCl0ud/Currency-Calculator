@@ -1,5 +1,5 @@
 {
-  let calculateResult = (amount, currency) => {
+  const calculateResult = (amount, currency) => {
     const EUR = 4.3272;
     const USD = 4.0171;
     const GBP = 5.0486;
@@ -31,7 +31,7 @@
 
     const amount = +amountElement.value;
     const currency = currencyElement.value;
-    let result = calculateResult(amount, currency);
+    const result = calculateResult(amount, currency);
 
     updateResultText(amount, currency, result)
   };
